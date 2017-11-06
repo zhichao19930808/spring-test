@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
+       xmlns:tx="http://www.springframework.org/schema/tx">
+
+    <bean id="user" class="xin.zcglory.entity.User">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="name" value="李四"/>
+        <constructor-arg name="member" ref="member"/>
+        <constructor-arg name="home">
+            <list>
+                <value>北京</value>
+                <value>山西</value>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="accounts">
+            <map>
+                <entry key="1" value-ref="account1"/>
+                <entry key="2" value-ref="account2"/>
+                <entry key="3" value-ref="account3"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+
+    <bean id="member" class="xin.zcglory.entity.Member">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="会员"/>
+    </bean>
+
+
+
+    <bean id="account1" class="xin.zcglory.entity.Account">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="account" value="账号1"/>
+        <constructor-arg name="password" value="密码1"/>
+    </bean>
+    <bean id="account2" class="xin.zcglory.entity.Account">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="account" value="账号2"/>
+        <constructor-arg name="password" value="密码2"/>
+    </bean>
+    <bean id="account3" class="xin.zcglory.entity.Account">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="account" value="账号3"/>
+        <constructor-arg name="password" value="密码3"/>
+    </bean>
+
+
+</beans>

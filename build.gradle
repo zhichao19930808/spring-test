@@ -1,0 +1,23 @@
+group 'spring-test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //spring
+    compile 'org.springframework:spring-context-support:5.0.0.RELEASE'
+    compile 'org.springframework:spring-orm:5.0.0.RELEASE'
+    compile 'org.springframework:spring-webmvc:5.0.0.RELEASE'
+
+
+
+
+}
