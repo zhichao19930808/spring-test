@@ -2,6 +2,7 @@ package xin.zcglory.entity;
 
 /**
  * 单例
+ * 单例模式限制了类实力的创建，采用这种模式设计的类，可保证有且只有一个实例，并提供访问该实例的全局访问点。
  */
 public class SingleCase {
     private int id;

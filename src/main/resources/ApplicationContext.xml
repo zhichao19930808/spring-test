@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
        xmlns:tx="http://www.springframework.org/schema/tx">
 
-    <bean id="user" class="xin.zcglory.entity.User">
+    <bean id="user" class="xin.zcglory.entity.User" scope="prototype">
         <constructor-arg name="id" value="2"/>
         <constructor-arg name="name" value="李四"/>
         <constructor-arg name="member" ref="member"/>
