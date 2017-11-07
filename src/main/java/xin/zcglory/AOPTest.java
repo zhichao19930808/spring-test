@@ -11,7 +11,7 @@ public class AOPTest {
 
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-        AopdemoImpl service = (AopdemoImpl) context.getBean("service");
+        AopdemoImpl service = (AopdemoImpl) context.getBean("aopdemoImpl");
         service.add();
     }
 }

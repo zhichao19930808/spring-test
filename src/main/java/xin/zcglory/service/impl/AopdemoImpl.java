@@ -1,7 +1,8 @@
 package xin.zcglory.service.impl;
 
+import org.springframework.stereotype.Service;
 import xin.zcglory.service.AopDemo;
-
+@Service
 public class AopdemoImpl implements AopDemo {
     private xin.zcglory.dao.impl.AopdemoImpl dao = new xin.zcglory.dao.impl.AopdemoImpl();
     @Override

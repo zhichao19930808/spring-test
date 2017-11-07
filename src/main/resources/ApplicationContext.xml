@@ -77,5 +77,4 @@
         <aop:advisor advice-ref="afterAd" pointcut-ref="point"/>
     </aop:config>
 
-    <bean class="xin.zcglory.service.impl.AopdemoImpl" id="service"/>
 </beans>
