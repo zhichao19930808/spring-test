@@ -60,12 +60,15 @@
     <!--面向切面-->
     <!--第一步：将前置增强处理类放入容器-->
     <bean id="beforeAd" class="xin.zcglory.ad.BeforeAd"/>
+    <!--后置增强处理类-->
+    <bean id="afterAd" class="xin.zcglory.ad.AfterAd"/>
     <!--第二部：设置切入点，并将增强处理类织入切入点-->
     <aop:config proxy-target-class="true">
         <!--设置切入点-->
         <aop:pointcut id="point" expression="execution(public * xin.zcglory.service.*.*(..))"/>
         <!--为切入点织入增强处理类-->
         <aop:advisor advice-ref="beforeAd" pointcut-ref="point"/>
+        <aop:advisor advice-ref="afterAd" pointcut-ref="point"/>
     </aop:config>
 
     <bean class="xin.zcglory.service.impl.AopdemoImpl" id="service"/>
