@@ -4,7 +4,7 @@ import xin.zcglory.entity.factory.InkBox;
 
 public class CSInkBox implements InkBox {
     @Override
-    public void createBinBox() {
+    public void createInkBox() {
         System.out.println("创建了一个彩色的墨盒！！！");
     }
 }
