@@ -16,8 +16,7 @@ dependencies {
     compile 'org.springframework:spring-context-support:5.0.0.RELEASE'
     compile 'org.springframework:spring-orm:5.0.0.RELEASE'
     compile 'org.springframework:spring-webmvc:5.0.0.RELEASE'
-
-
-
+//    compile group: 'aspectj', name: 'aspectjrt', version: '1.5.4'
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.12'//spring集成AspectJ LTW织入器所需包
 
 }

@@ -17,18 +17,19 @@
           <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:5.0.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-orm:5.0.0.RELEASE" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:5.0.0.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-orm:5.0.0.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jcl:5.0.0.RELEASE" />
-          <element id="file-copy" path="G:/GradleDepository/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.0.RELEASE/7efad8565e5e609d1ff301043b8ea31080796391/spring-webmvc-5.0.0.RELEASE.jar" />
-          <element id="file-copy" path="G:/GradleDepository/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.0.RELEASE/f5c2d9d5668534c308a1ca4eda070cd01320af65/spring-web-5.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/GradleDepository/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.8.12/87be4d5a1c68004a247a62c011fa63da786965fb/aspectjweaver-1.8.12.jar" />
         </element>
       </element>
     </root>
