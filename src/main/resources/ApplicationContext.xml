@@ -9,6 +9,12 @@
 	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
        xmlns:tx="http://www.springframework.org/schema/tx">
 
+
+    <!--开启注解-->
+    <context:component-scan base-package="xin"/>
+    <!--开启aop自动代理类支持-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
     <bean id="user" class="xin.zcglory.entity.User" scope="prototype">
         <constructor-arg name="id" value="2"/>
         <constructor-arg name="name" value="李四"/>
@@ -63,7 +69,7 @@
     <!--后置增强处理类-->
     <bean id="afterAd" class="xin.zcglory.ad.AfterAd"/>
     <!--第二部：设置切入点，并将增强处理类织入切入点-->
-    <aop:config proxy-target-class="true">
+    <aop:config>
         <!--设置切入点-->
         <aop:pointcut id="point" expression="execution(public * xin.zcglory.service.*.*(..))"/>
         <!--为切入点织入增强处理类-->
