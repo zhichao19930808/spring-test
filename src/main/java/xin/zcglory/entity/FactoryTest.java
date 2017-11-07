@@ -15,6 +15,12 @@ public class FactoryTest {
 //        //创建一个黑白的墨盒
         HBInkBox hbInkBox= (HBInkBox) factory.getInkBox("黑白");
         hbInkBox.createBinBox();
+
+        System.out.println("---------接口-----------");
+        InkBox inkBox1 = factory.getInkBox("黑白");
+        InkBox inkBox2 = factory.getInkBox("彩色");
+        inkBox1.createBinBox();
+        inkBox2.createBinBox();
     }
 
 
